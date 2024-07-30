@@ -22,23 +22,19 @@ Make sure you have the following installed on your machine:
 
    Using npm:
 
-   ````bash
-   npm install
 
-   ```bash
+
    npm install
    ````
 
    Using pnpm:
 
 
-   ```bash
    pnpm install
    ````
 
    Using yarn:
 
-   ```bash
    yarn install
    ```
 
