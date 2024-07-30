@@ -1,0 +1,44 @@
+@import '../../scss/colors';
+@import '../../scss/mixins';
+@import '../../scss/mq-size';
+
+.main-header {
+  background-color: $color-gray-light;
+  padding: 30px 0;
+  margin-bottom: 30px;
+
+  a {
+    color: $color-primary;
+  }
+
+  .skip-link {
+    a {
+      color: $color-gray-light;
+    }
+  }
+
+  .logo {
+    svg {
+      min-width: rem(300px);
+
+      @include mq-size($medium) {
+        min-width: rem(210px);
+      }
+    }
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include mq-size($medium) {
+      align-items: flex-start;
+    }
+  }
+
+  @include mq-size($medium) {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+}

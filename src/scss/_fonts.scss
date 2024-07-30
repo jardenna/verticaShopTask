@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'inter_regular';
+  src:
+    url('/fonts/inter-regular.woff2') format('woff2'),
+    url('/fonts/inter-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-primary: inter_regular, sans-serif;

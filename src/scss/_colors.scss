@@ -1,0 +1,31 @@
+$color-white: #fff;
+$color-black: #000;
+$color-primary: #414b52;
+$color-primary-dark: #121212;
+
+// $color-secondary
+$color-secondary: #156060;
+$color-secondary-dark: #4b534b;
+
+// Gray
+$color-gray-dark: #c0bcbc;
+$color-gray-medium: #e1dbdb;
+$color-gray-light: #f8f8f8;
+
+// $color-mics
+$color-hilight: #d96500;
+$color-link: #922f55;
+$color-danger: #bd393a;
+$color-info: #ffd700;
+
+// Scheme colors
+$scheme-dark: $color-primary, $color-gray-light;
+
+// Scheme Btn colors
+$scheme-btn-neutral: $color-gray-light, $color-secondary;
+$scheme-btn-dark: $color-secondary, $color-gray-light;
+
+// Border
+$color-border: $color-gray-dark;
+$color-border-medium: $color-gray-medium;
+$color-border-light: $color-gray-light;

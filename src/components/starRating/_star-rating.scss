@@ -1,0 +1,16 @@
+@import '../../scss/colors';
+@import '../../scss/functions';
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  font-size: rem(24px);
+  color: $color-gray-medium;
+}
+
+.star.filled {
+  color: $color-info;
+}

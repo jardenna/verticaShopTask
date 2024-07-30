@@ -1,0 +1,17 @@
+@import '../../../scss/functions';
+
+.number-step-container {
+  flex-direction: row;
+  gap: 8px;
+  max-width: rem(124px);
+  display: flex;
+
+  input {
+    text-align: center;
+  }
+}
+
+.btn-ghost {
+  font-size: rem(24px);
+  text-align: center;
+}

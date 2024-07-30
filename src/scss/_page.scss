@@ -1,0 +1,70 @@
+.container {
+  width: 100%;
+  max-width: rem(1250px);
+  margin: 0 auto;
+  display: flex;
+  padding: 0 16px;
+
+  @include mq-size($medium) {
+    flex-direction: column;
+  }
+}
+
+.page-content {
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+  }
+}
+
+.main-container {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-content {
+  gap: 70px;
+}
+
+.visibility-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.text-danger {
+  color: $color-danger;
+}
+
+svg {
+  fill: currentcolor;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+  background-image: url('/images/hero_img.jpg');
+  height: calc(100% - $nav-height);
+  background-size: cover;
+  background-position: top;
+
+  @include mq-size($medium) {
+    background-image: url('/images/hero_img_small.jpg');
+  }
+
+  svg {
+    min-width: rem(400px);
+
+    @include mq-size($medium) {
+      min-width: 90%;
+    }
+  }
+
+  a {
+    color: $color-primary;
+  }
+}

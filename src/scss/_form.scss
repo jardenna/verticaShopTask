@@ -1,0 +1,84 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  appearance: textfield;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+
+  &:has(input[type='radio']) {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-label {
+    margin-bottom: 4px;
+  }
+
+  .form-input {
+    border: 1px solid $color-border;
+    font-size: rem(14px);
+    padding: 12px;
+    border-radius: $border-radius;
+    outline: transparent;
+
+    &:focus-visible {
+      background: linear-gradient($color-secondary-dark, $color-secondary)
+        bottom -12px left 0 / 100% 3px content-box padding-box repeat-x;
+    }
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: rem(14px);
+    border-radius: $border-radius;
+    outline: transparent;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid $color-border;
+    background-color: $color-white;
+    color: $color-primary;
+    position: relative;
+
+    &:focus-visible {
+      background: linear-gradient($color-secondary-dark, $color-secondary)
+        bottom -12px left 0 / 100% 3px content-box padding-box repeat-x;
+    }
+  }
+}
+
+fieldset {
+  border: 0;
+  margin: 10px 0;
+  position: relative;
+  padding: 0;
+  padding-top: 50px;
+}
+
+legend {
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.form-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+
+  @include mq-size($small) {
+    .btn {
+      width: 70%;
+    }
+  }
+}

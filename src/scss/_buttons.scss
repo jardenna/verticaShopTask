@@ -1,0 +1,117 @@
+a {
+  &.btn {
+    text-decoration: none;
+  }
+}
+
+a[class^='btn-'],
+.btn {
+  border: 0;
+  position: relative;
+  padding: 20px;
+  font-size: rem(16px);
+  border-radius: $border-radius;
+  width: 100%;
+  cursor: pointer;
+
+  @include transition;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -18%;
+    width: 130%;
+    height: 193%;
+  }
+
+  &:focus {
+    outline: transparent;
+  }
+
+  &:focus-visible {
+    @include outline;
+
+    @include mq-size($medium) {
+      outline: transparent;
+    }
+  }
+}
+
+.btn-neutral {
+  @include color-scheme($scheme-btn-neutral...);
+
+  border: 1px solid $color-secondary-dark;
+
+  &:focus-visible {
+    @include mq-size($medium) {
+      @include outline($color-secondary);
+    }
+
+    border-color: $color-white;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-gray-light;
+  }
+}
+
+.btn-primary {
+  @include color-scheme($scheme-btn-dark...);
+
+  border: 1px solid $color-secondary-dark;
+
+  &:focus-visible {
+    border-color: $color-white;
+
+    @include outline($color-secondary);
+
+    @include mq-size($medium) {
+      outline: transparent;
+    }
+  }
+
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+}
+
+.btn-link,
+.btn-ghost {
+  background: transparent;
+  text-align: left;
+  min-width: auto;
+  color: $color-primary;
+  padding: 0;
+
+  &.btn {
+    &:focus {
+      @include outline($color-primary);
+
+      @include mq-size($medium) {
+        outline: transparent;
+      }
+    }
+
+    &:focus-visible {
+      @include outline($color-secondary);
+
+      @include mq-size($medium) {
+        outline: transparent;
+      }
+    }
+  }
+}
+
+.btn-link {
+  color: $color-link;
+  font-size: inherit;
+  text-decoration: underline;
+}
+
+.btn-close {
+  &:hover {
+    color: $color-secondary;
+  }
+}
