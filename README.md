@@ -14,7 +14,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/fashion-fusion.git
+   git clone https://github.com/jardenna/verticaShopTask.git
    cd fashion-fusion
    ```
 
