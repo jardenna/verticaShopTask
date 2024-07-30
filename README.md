@@ -31,8 +31,6 @@ Make sure you have the following installed on your machine:
 
    Using pnpm:
 
-   ````bash
-   npm install
 
    ```bash
    pnpm install
